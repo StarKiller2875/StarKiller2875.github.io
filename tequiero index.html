@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Te quiero Yasmin Esmeralda</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8d7da; /* Fondo de color */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  h1 {
+    font-style: italic;
+    color: #6610f2; /* Color del texto */
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  p {
+    color: #333;
+    font-size: 20px;
+    line-height: 1.5;
+    font-style: italic;
+  }
+  .poem-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .heart-container {
+    margin-right: 20px;
+  }
+  .heart {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transform: rotate(-45deg);
+    background: #ff3366;
+    animation: heartbeat 1.5s infinite; /* Animación de latido */
+    margin-bottom: 10px;
+  }
+  @keyframes heartbeat {
+    0% {
+      transform: scale(0.75);
+    }
+    20% {
+      transform: scale(1);
+    }
+    40% {
+      transform: scale(0.75);
+    }
+    60% {
+      transform: scale(1);
+    }
+    80% {
+      transform: scale(0.75);
+    }
+    100% {
+      transform: scale(0.75);
+    }
+  }
+  .heart:before,
+  .heart:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ff3366;
+    border-radius: 50px;
+  }
+  .heart:before {
+    top: -25px;
+    left: 0;
+  }
+  .heart:after {
+    top: 0;
+    left: 25px;
+  }
+  .shine {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: shine-animation 2s infinite;
+  }
+  @keyframes shine-animation {
+    0% {
+      transform: rotate(0deg);
+      opacity: 0;
+    }
+    50% {
+      transform: rotate(180deg);
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(360deg);
+      opacity: 0;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Te quiero <span style="color: #28a745;">Yasmin Esmeralda</span></h1>
+  <div class="poem-container">
+    <div class="heart-container">
+      <div class="heart">
+        <div class="shine"></div>
+      </div>
+      <div class="heart">
+        <div class="shine"></div>
+      </div>
+    </div>
+    <p>En los jardines de la luz,<br>
+      bajo un cielo de turquesa y esmeralda,<br>
+      brilla Yasmin, flor que seduce,<br>
+      con su mirada que al alma embriaga.<br><br>
+      
+      Es un poema en movimiento,<br>
+      cada paso, una danza de encanto,<br>
+      su risa, melodía en el viento,<br>
+      que despierta al mundo de su letargo.<br><br>
+      
+      Yasmin, joya en el ocaso,<br>
+      destello en la noche más oscura,<br>
+      con su nombre el universo abrazo,<br>
+      y en su esencia encuentro la ternura.<br><br>
+      
+      Que el sol refleje su nombre en cada estrella,<br>
+      que el viento susurre su nombre en cada prado,<br>
+      Yasmin Esmeralda, princesa de esta bella,<br>
+      en tu luz encuentro mi eterno sagrado.
+    </p>
+    <div class="heart-container">
+      <div class="heart">
+        <div class="shine"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
